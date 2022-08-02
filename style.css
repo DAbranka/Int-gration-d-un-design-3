@@ -1,18 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: rgb(255, 122, 122);
   background-image: url(/IMAGES/bg-intro-desktop.png);
   font-family: "Poppins";
   color: white;
-  margin-top: 100px;
-}
-
-#thebloc {
+  box-sizing: border-box;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: auto;
-  /*border: solid;
-  border-color: black;*/
+  justify-content: center;
 }
 
 .leftside {
@@ -20,19 +21,13 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  /*border: solid;
-  border-color: black;*/
   padding: 30px;
-  margin-left: 80px;
-  margin-right: 50px;
 }
 
 #bigtxt {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bolder;
   width: 600px;
-  padding: 0px;
-  margin: 0px;
 }
 
 #second_paragraph {
@@ -48,9 +43,7 @@ body {
   display: flexbox;
   flex-direction: column;
   align-items: center;
-  margin: 0px;
-  /*border: solid;
-  border-color: black;*/
+  margin-left: 100px;
 }
 #sevendays {
   background-color: rgb(96, 85, 165);
@@ -61,6 +54,7 @@ body {
   height: 30px;
   padding-top: 10px;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 #whitebloc {
@@ -78,7 +72,8 @@ body {
 /*----------T E X T - B L O C S----------*/
 
 #form {
-  padding-left: 12px;
+  display: flex;
+  flex-direction: column;
 }
 
 #firstname {
@@ -145,6 +140,20 @@ body {
   opacity: 50%;
 }
 
-a:hover {
+a {
   color: red;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  body {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 900px) {
+  #right_side {
+    margin: 0px;
+  }
 }
